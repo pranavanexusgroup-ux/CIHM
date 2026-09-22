@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Royal Navy Blue Gradient -->
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b3280" />
+      <stop offset="100%" stop-color="#14245c" />
+    </linearGradient>
+
+    <!-- Emerald Medical Green Gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+
+    <!-- Golden Sunburst Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1b3280" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring in Official CIHM Royal Blue -->
+  <circle cx="250" cy="250" r="236" fill="#ffffff" stroke="#1b3280" stroke-width="15" filter="url(#softShadow)" />
+  <circle cx="250" cy="250" r="222" fill="#ffffff" stroke="#1b3280" stroke-width="2" stroke-opacity="0.25" />
+
+  <!-- Upper Arc: Bold "C  I  H  M" -->
+  <path id="cihmArc" d="M 130,170 A 155,155 0 0,1 370,170" fill="none" />
+  <text font-family="'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#1b3280" letter-spacing="8">
+    <textPath href="#cihmArc" startOffset="50%" text-anchor="middle">
+      C I H M
+    </textPath>
+  </text>
+
+  <!-- Left Green Laurel Wreath (Official CIHM Branch) -->
+  <g fill="#16a34a" stroke="#15803d" stroke-width="0.5">
+    <path d="M 160,170 Q 120,220 135,285" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="150" cy="175" rx="10" ry="4" transform="rotate(-30 150 175)"/>
+    <ellipse cx="140" cy="195" rx="11" ry="4.5" transform="rotate(-40 140 195)"/>
+    <ellipse cx="132" cy="218" rx="11" ry="4.5" transform="rotate(-55 132 218)"/>
+    <ellipse cx="128" cy="242" rx="11" ry="4.5" transform="rotate(-70 128 242)"/>
+    <ellipse cx="129" cy="266" rx="11" ry="4.5" transform="rotate(-85 129 266)"/>
+    <ellipse cx="135" cy="288" rx="10" ry="4" transform="rotate(-105 135 288)"/>
+    <!-- Inner Leaf Tier Left -->
+    <ellipse cx="160" cy="190" rx="9" ry="3.5" transform="rotate(-20 160 190)"/>
+    <ellipse cx="150" cy="210" rx="9" ry="3.5" transform="rotate(-35 150 210)"/>
+    <ellipse cx="144" cy="232" rx="9" ry="3.5" transform="rotate(-50 144 232)"/>
+    <ellipse cx="142" cy="254" rx="9" ry="3.5" transform="rotate(-65 142 254)"/>
+    <ellipse cx="146" cy="275" rx="9" ry="3.5" transform="rotate(-80 146 275)"/>
+  </g>
+
+  <!-- Right Green Laurel Wreath (Official CIHM Branch) -->
+  <g fill="#16a34a" stroke="#15803d" stroke-width="0.5">
+    <path d="M 340,170 Q 380,220 365,285" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="350" cy="175" rx="10" ry="4" transform="rotate(30 350 175)"/>
+    <ellipse cx="360" cy="195" rx="11" ry="4.5" transform="rotate(40 360 195)"/>
+    <ellipse cx="368" cy="218" rx="11" ry="4.5" transform="rotate(55 368 218)"/>
+    <ellipse cx="372" cy="242" rx="11" ry="4.5" transform="rotate(70 372 242)"/>
+    <ellipse cx="371" cy="266" rx="11" ry="4.5" transform="rotate(85 371 266)"/>
+    <ellipse cx="365" cy="288" rx="10" ry="4" transform="rotate(105 365 288)"/>
+    <!-- Inner Leaf Tier Right -->
+    <ellipse cx="340" cy="190" rx="9" ry="3.5" transform="rotate(20 340 190)"/>
+    <ellipse cx="350" cy="210" rx="9" ry="3.5" transform="rotate(35 350 210)"/>
+    <ellipse cx="356" cy="232" rx="9" ry="3.5" transform="rotate(50 356 232)"/>
+    <ellipse cx="358" cy="254" rx="9" ry="3.5" transform="rotate(65 358 254)"/>
+    <ellipse cx="354" cy="275" rx="9" ry="3.5" transform="rotate(80 354 275)"/>
+  </g>
+
+  <!-- Circular Dark Navy Ribbon Band -->
+  <path d="M 148,278 A 120,120 0 1,1 352,278 L 332,274 A 98,98 0 1,0 168,274 Z" fill="url(#navyGrad)" />
+
+  <!-- Arched Text Inside Ribbon: "CENTRAL INSTITUTE OF HEALTHCARE & MANAGEMENT" -->
+  <path id="nameArc" d="M 152,276 A 110,110 0 1,1 348,276" fill="none" />
+  <text font-family="'Outfit', 'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="800" fill="#ffffff" letter-spacing="1.4">
+    <textPath href="#nameArc" startOffset="50%" text-anchor="middle">
+      CENTRAL INSTITUTE OF HEALTHCARE &amp; MANAGEMENT
+    </textPath>
+  </text>
+
+  <!-- Central Emerald Green Circular Medallion -->
+  <circle cx="250" cy="248" r="74" fill="url(#greenGrad)" stroke="#ffffff" stroke-width="4" filter="url(#softShadow)" />
+  <circle cx="250" cy="248" r="69" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3 2" />
+
+  <!-- Medical Caduceus Staff & Wings in Crisp White Inside Green Medallion -->
+  <!-- Asclepius/Hermes Wings -->
+  <path d="M 250,218 C 240,205 212,207 208,222 C 218,226 232,223 245,226 C 247,222 249,219 250,218 Z" fill="#ffffff"/>
+  <path d="M 250,218 C 260,205 288,207 292,222 C 282,226 268,223 255,226 C 253,222 251,219 250,218 Z" fill="#ffffff"/>
+  <!-- Wing Feather Details -->
+  <path d="M 218,223 C 228,230 238,228 247,229" fill="none" stroke="#15803d" stroke-width="1.2"/>
+  <path d="M 282,223 C 272,230 262,228 253,229" fill="none" stroke="#15803d" stroke-width="1.2"/>
+
+  <!-- Central Staff Rod -->
+  <circle cx="250" cy="214" r="5" fill="#ffffff"/>
+  <line x1="250" y1="214" x2="250" y2="288" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 248,288 L 252,288 L 250,292 Z" fill="#ffffff"/>
+
+  <!-- Two Coiled Serpents Around Staff -->
+  <path d="M 241,228 C 232,233 234,244 250,248 C 266,252 268,263 250,268 C 234,272 236,282 250,285" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 259,228 C 268,233 266,244 250,248 C 234,252 232,263 250,268 C 266,272 264,282 250,285" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="240" cy="227" r="2.2" fill="#ffffff"/>
+  <circle cx="260" cy="227" r="2.2" fill="#ffffff"/>
+
+  <!-- Bottom: Open Book (Wisdom / Learning) in Navy/Slate Layers -->
+  <!-- Back Page Leaves -->
+  <path d="M 108,302 C 160,292 215,296 250,314 C 285,296 340,292 392,302 L 380,312 C 335,302 285,308 250,324 C 215,308 165,302 120,312 Z" fill="#0f1f4b" />
+  <!-- Middle Page Leaves -->
+  <path d="M 102,324 C 155,312 210,318 250,336 C 290,318 345,312 398,324 L 385,335 C 340,323 290,330 250,346 C 210,330 160,323 115,335 Z" fill="#1e293b" />
+  <!-- Front Page Leaves -->
+  <path d="M 96,346 C 150,334 208,340 250,358 C 292,340 350,334 404,346 L 392,357 C 345,345 292,352 250,368 C 208,352 155,345 108,357 Z" fill="#1b3280" />
+
+  <!-- Radiant Golden Sunrise / Knowledge Lamp at the Center of the Book -->
+  <circle cx="250" cy="336" r="14" fill="url(#goldGrad)" filter="url(#softShadow)" />
+  <path d="M 238,336 Q 250,318 262,336 Q 250,344 238,336 Z" fill="#ffffff" opacity="0.6"/>
+  <!-- Sun Rays Radiating Upward -->
+  <line x1="250" y1="318" x2="250" y2="310" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="240" y1="322" x2="234" y2="315" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="260" y1="322" x2="266" y2="315" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="233" y1="332" x2="225" y2="328" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="267" y1="332" x2="275" y2="328" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Lower Base Ribbon / Green Wing Swath (Official CIHM Foundation) -->
+  <path d="M 76,368 C 145,340 210,360 250,392 C 290,360 355,340 424,368 C 360,404 290,388 250,422 C 210,388 140,404 76,368 Z" fill="url(#greenGrad)" filter="url(#softShadow)" />
+  <path d="M 86,373 C 148,348 210,366 250,396 C 290,366 352,348 414,373 C 355,404 290,390 250,418 C 210,390 145,404 86,373 Z" fill="#15803d" opacity="0.4" />
+</svg>

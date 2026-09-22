@@ -1,0 +1,6 @@
+{
+  "name": "CIHM – Central Institute of Healthcare & Management",
+  "description": "Central Institute of Healthcare & Management (CIHM Kolkata) – Premier Paramedical & Healthcare Institute offering DMLT, X-Ray, ECG, OT, Dialysis Technician, & Hospital Management with 100% Placement Assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
